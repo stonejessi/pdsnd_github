@@ -134,26 +134,26 @@ def user_stats(df):
         gender_types = df['Gender'].value_counts()
         print(gender_types)
     else:
-        print('no gender data for this city')
+        print('There is no gender data for this city.')
 
     if 'Birth Year' in df.columns:
         birth_year = df['Birth Year']
         earliest_year = birth_year.min()
         print("The earliest birth year:", earliest_year)
     else:
-        print('no birth year data for this city')
+        print('There is no birth year data for this city.')
 
     if 'Birth Year' in df.columns:
         most_recent = birth_year.max()
         print("The most recent birth year:", most_recent)
     else:
-        print('no birth year data for this city')
+        print('There is no birth year data for this city.')
 
     if 'Birth Year' in df.columns:
         most_common_year = birth_year.value_counts().idxmax()
         print("The most common birth year:", most_common_year)
     else:
-        print('no birth year data for this city')
+        print('There is no birth year data for this city.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
