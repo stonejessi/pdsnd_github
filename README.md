@@ -5,10 +5,12 @@
 GIT repository of bikeshare.py project for udacity nanodegree
 
 ### Description
-Describe what your project is about and what it does
+This bikeshare.py project allows users to investigate statistical and/or raw data for three cities
 
 ### Files used
-Include the files used
+washington.csv
+chicago.csv
+new_york_city.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
