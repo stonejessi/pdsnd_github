@@ -169,7 +169,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        see_data = input("\nYou like to see five rows of the raw data? type 'yes' or 'no' \n").lower()
+        see_data = input("\n Would you like to see five rows of the raw data? Enter 'yes' or 'no' \n").lower()
         row_index = 0
         while True:
             if see_data != 'yes':
@@ -177,9 +177,9 @@ def main():
             else:
                 print(df[row_index: row_index + 5])
                 row_index = row_index + 5
-                see_data = input("\n Would you like to see five more rows of raw data? type 'yes' or 'no' \n").lower()
+                see_data = input("\n Would you like to see five more rows of raw data? Enter 'yes' or 'no' \n").lower()
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\n Would you like to restart? Enter yes or no.\n')
         while True:
             if restart.lower() != 'yes':
                 break
